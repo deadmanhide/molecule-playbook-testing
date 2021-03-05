@@ -42,8 +42,3 @@
         name: "{{ apache_service }}"
         state: started
         enabled: true
-
-    - name: Install Network manager dependency for nmcli ansible module
-      apt:
-        state: present
-        name: network-manager
